@@ -33,7 +33,7 @@ class QuizStartScreen extends StatelessWidget {
                   child: Text('START'),
                   color: Colors.blue.shade900,
                   onPressed: () {
-                    Navigator.of(context).pushNamed(QuizScreen.routeName);
+                    Navigator.of(context).pushNamed(QuizStartScreen.routeName);
                   },
                 ),
               ],

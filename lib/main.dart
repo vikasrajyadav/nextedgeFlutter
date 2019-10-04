@@ -7,6 +7,7 @@ import './screens/student_dashboard_screen.dart';
 import './providers/student_provider.dart';
 import './providers/events_provider.dart';
 import './screens/t&c_screen.dart';
+import './providers/quiz_provider.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,6 +22,9 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider.value(
           value: Events(),
         ),
+        ChangeNotifierProvider.value(
+          value: Quizs(),
+        )
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
