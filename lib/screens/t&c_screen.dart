@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './quiz_start_screen.dart';
 
 class TaC extends StatelessWidget {
   static const routeName = '/t&c';
@@ -36,7 +37,9 @@ class TaC extends StatelessWidget {
                       'Agree',
                       style: TextStyle(color: Colors.white),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(QuizStartScreen.routeName);
+                    },
                   ),
                   RaisedButton(
                     color: Theme.of(context).errorColor,
@@ -44,7 +47,9 @@ class TaC extends StatelessWidget {
                       'Decline',
                       style: TextStyle(color: Colors.white),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
                   )
                 ],
               )

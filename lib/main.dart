@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:next_edge/screens/quiz_screen.dart';
+import 'package:next_edge/screens/quiz_start_screen.dart';
 import 'package:provider/provider.dart';
 import './screens/auth_screen.dart';
 import './screens/student_dashboard_screen.dart';
@@ -21,6 +23,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
@@ -29,6 +32,8 @@ class MyApp extends StatelessWidget {
         routes: {
           StudentDashBoardScreen.routeName: (ctx) => StudentDashBoardScreen(),
           TaC.routeName: (ctx) => TaC(''),
+          QuizStartScreen.routeName: (ctx) => QuizStartScreen(),
+          QuizScreen.routeName: (ctx) => QuizScreen(),
         },
       ),
     );
